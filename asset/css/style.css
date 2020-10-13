@@ -1,0 +1,124 @@
+/* genral */
+body,*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+    color: #fff;
+    cursor: pointer;
+}
+header{
+    position: relative;
+    height: 100vh;
+}
+/* nav */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#000;
+}
+
+nav ul{
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+    width:30%;
+}
+
+nav ul img{
+    width:10%;
+    display:block
+}
+/* video */
+.view-header {
+    height: 96.7%;
+    overflow: hidden;
+    position: relative;
+}
+
+.view-header video{
+    z-index: 0;
+}
+.view-header h1{
+    position:absolute;
+    z-index: 1;
+    color: #fff;
+    text-transform: uppercase;
+    top: 12em;
+    left: 0.5em;
+    transform: translate(1%, 13%);
+}
+
+.view-header h1 span{
+    font-size:0.5em
+}
+
+.view-header h1 span img {
+    width: 1%;
+    vertical-align: middle;
+}
+
+.view-header h1 button{
+    border: none;
+    font-size:0.5em;
+    padding:0.2em 0.3em;
+    border-radius: 0.2em;
+    margin-right: 0.5em;
+}
+
+.view-header h1 button:last-child{
+    background-color: #707070;
+    color: #fff
+}
+
+/* link of small video */
+.small-video{
+    background-color: rgba(0, 0, 0,0.5);
+    padding: 0.5em 1.3em;
+    position: absolute;
+    bottom: 0;
+}
+
+video::-webkit-media-controls {
+    display:none !important;
+}
+
+.small-video h2{
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.small-video ul{
+    padding-inline-start: 0;
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+.small-video ul li{
+    margin-right: 0.2em;
+}
+
+.small-video ul li a{
+    position:relative;
+}
+
+.small-video ul li a:hover {
+    zoom: 125%;
+}
+
+.small-logo{
+    width:5%;
+    position:absolute;
+    left: 0;
+    transform: translate(16%, 13%);
+}
+
+.top-logo{
+    width:5%;
+    position:absolute;
+    right: 0;
+    transform: translate(-20%, 50%)
+}
